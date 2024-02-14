@@ -54,6 +54,10 @@ body{
     max-width: 100%;
     height: auto;
 }
+*:focus{
+    outline: 2px dashed var(--brand-color);
+}
+
 
 /* CONTAINER  */
 .container{

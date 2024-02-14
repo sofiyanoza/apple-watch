@@ -9,12 +9,12 @@
 </head>
 <body>
     <!-- SITE HEADER  -->
-    <div class="container">
     <header class="site-header">
+    <div class="container site-header-container">
             <a class="site-logo" href="#">
-                <img src="img/apple-logo (1).svg" alt="site-logo" width="35" height="42">
+                <img class="logo-img" src="img/apple-logo (1).svg" alt="site-logo" width="35" height="42">
             </a>
-            <div class="sitenav">
+            <nav class="sitenav">
                 <ul class="sitenav-list">
                     <li class="sitenav-item">
                         <a class="sitenav-link" href="#">Home</a>
@@ -29,10 +29,11 @@
                         <a class="sitenav-link" href="#">Services</a>
                     </li>
                 </ul>
-                <div class="sitenav-main-link-wrapper">
-                    <a class="sitenav-main-link" href="#">How can we help you?</a>
-                </div>
-            </div>
+                
+            </nav>
+              <form class="search-form"  action="https://echo.htmlacademy.ru" method="get">
+                <input class="search-form-input" type="search" name="search" placeholder="How can we help you?" aria-label="search" required>
+              </form>
         </div>
             
     </header>
