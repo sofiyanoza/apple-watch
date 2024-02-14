@@ -1,3 +1,10 @@
+:root{
+    --brand-color: rgb(234, 98, 92);
+    --text-color: rgb(51, 51, 51);
+}
+
+
+
 /* GLOBAL */
 
 html{
@@ -22,8 +29,26 @@ body{
     font-size: 16px;
     line-height: 1.5;
     background-color: #fff;
-    color: #222;
+    color: var(--text-color);
 }
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+        url("../fonts/Roboto-Medium.woff") format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 .img{
     max-width: 100%;
@@ -33,14 +58,258 @@ body{
 /* CONTAINER  */
 .container{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1100px;
     padding-left: 50px;
     padding-right: 50px;
     margin-left: auto;
     margin-right: auto;
 }
+/* SITE-HEADER */
+.site-header {
+    display: flex;
+    margin-top: 36px;
+    margin-bottom:80px ;
+}
+
+.site-logo {
+    display: flex;
+    width: 35px;
+    height: 42px;
+    margin-right: 502px;
+}
+.sitenav {
+    display: flex;
+    align-items: center;
+}
+.sitenav-list {
+    display: flex;
+    list-style: none;
+    font-family: "Roboto";
+font-size: 15px;
+font-weight: 400;
+line-height: 150%;
+text-align: center;
+}
+.sitenav-item:not( :last-child) {
+    margin-right: 30px;
+}
+.sitenav-link {
+    color:var(--text-color);
+    text-decoration: none;
+}
+.sitenav-main-link-wrapper{
+    width: 153px;
+    margin-left: 40px;
+    margin-bottom: 6px;
+    border-bottom:  1px solid var(--text-color);
+    
+}
+.sitenav-main-link {
+    display:inline-block;
+    color: rgb(102, 102, 102);
+    font-size: 15px;
+    font-weight: 400; 
+    line-height: 150%;
+   text-decoration: none;
+    text-align: center;
+}
+
+
+
+
 
 /* MAIN CONTENT  */
 .main-content{
     flex-grow: 1;
+}
+
+.site-hero { 
+    padding-top: 91px;
+    padding-bottom: 185px;
+    padding-left: 126px;
+    background-image: url(../img/intro-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+   
+   
+}
+.site-heading {
+    color: rgb(0, 0, 0);
+font-size: 40px;
+font-weight: 700;
+line-height: 120%;
+text-align: left;
+margin-top: 0;
+margin-bottom: 30px;
+}
+.site-text-wrapper{
+    width: 490px;
+    border-left:  3px solid rgb(136, 136, 136);
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-right: 245px;
+  
+}
+.site-text {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgb(119, 119, 119);
+font-size: 16px;
+font-weight: 400;
+line-height: 150%;
+margin-left: 40px;
+text-align: left;
+}
+.main-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    padding: 12px;
+    background-color: rgb(234, 98, 92);
+    color: #fff;
+font-size: 18px;
+font-weight: 700;
+line-height: 150%;
+letter-spacing: 0px;
+text-align: center;
+text-transform: uppercase;
+border: 0;
+}
+
+/* SITE FEATURES  */
+.site-features {
+    padding: 70px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.site-features-list {
+    display: flex;
+    
+}
+.site-featuers-item {
+    width: 280px;
+}
+.site-featuers-item:not(:last-child){
+    margin-right: 80px;
+}
+.site-features-heading {
+    margin-top: 0;
+    margin-bottom: 30px;
+  color: rgb(34, 34, 34);
+font-size: 18px;
+font-weight: 700;
+line-height: 150%;
+letter-spacing: 0px;
+text-align: left;
+text-transform: uppercase;
+}
+.site-features-text {
+    margin-top: 0;
+    margin-bottom: 20px;
+ color:var(--text-color);
+font-size: 15px;
+font-weight: 400;
+line-height: 160%;;
+text-align: left;
+}
+.features-link-wrapper{
+display: flex;
+}
+.features-link-decoration{
+   display: block; 
+  border: 3px solid rgb(234, 98, 92);
+  height: 0;
+  width: 40px;
+ margin-top: 12px;
+ margin-bottom: 12px;
+ margin-right: 10px;
+
+}
+.features-link {
+    display: block;
+    color: rgb(234, 98, 92);
+font-size: 16px;
+font-weight: 700;
+line-height: 160%;
+letter-spacing: 0%;
+text-align: left;
+text-transform: uppercase;
+text-decoration: none;
+}
+
+/* SITE INFO  */
+.site-info-wrapper{
+padding: 70px;
+background-image: url(../img/watch-in-hand.jpg);
+background-repeat: no-repeat;
+background-size: contain;
+background-position: right;
+}
+.info-heading{
+ width: 380px;
+}
+
+.info-text{
+    margin-right: 110px;
+}
+/* SITE-PROMO  */
+
+
+.site-promo{
+    padding-top: 240px;
+    padding-bottom: 240px;
+    padding-left: 635px;
+    padding-right: 126px;
+    background-image: url(../img/site-promo-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.promo-heading{
+    margin-top: 0;
+    width: 490px;
+    color: #fff;
+}
+.promo-text-wrapper{
+    border-left:  3px solid#fff;
+}
+.promo-text{
+    color: #fff;
+}
+/* RETINA BG  */
+/* RETINA-BG-IWATCH */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+.site-hero{
+    background-image: url(../img/intro-bg@2x.jpg);
+}
+}
+/* RETINA-BG-WATCH-IN-HAND */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+.site-info-wrapper{
+    background-image: url(../img/watch-in-hand@2x.jpg);
+}
+}
+/* RETINA-BG-PROMO  */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+
 }
