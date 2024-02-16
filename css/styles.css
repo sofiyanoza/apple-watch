@@ -305,10 +305,14 @@ text-align: left;
 
 /* SITE-PROMO  */
 
+.promo-container{
+    margin-right: auto;
+}
+
 .site-promo-wrapper{
     padding-top: 240px;
     padding-bottom: 240px;
- 
+   
     background-image: url(../img/site-promo-bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -316,7 +320,9 @@ text-align: left;
     background-size: cover;
 }
 .site-promo{  
-margin-left: auto;
+    width: 100%;
+    max-width: 490px;
+    margin-left: auto;
 }
 .promo-heading{
     margin-top: 0;
