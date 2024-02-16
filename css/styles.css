@@ -213,7 +213,7 @@ text-align: left;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 260px;
+   min-width:  260px;
     padding:  12px;
     background-color: rgb(234, 98, 92);
     color: #fff;
@@ -283,32 +283,40 @@ text-align: left;
 
 
 /* SITE INFO  */
+.site-info{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.info-container{
+    display: flex;
+    align-items: center;
+}
 .site-info-wrapper{
-padding: 70px;
-background-image: url(../img/watch-in-hand.jpg);
-background-repeat: no-repeat;
-background-size: contain;
-background-position: right;
+    
 }
 .info-heading{
  width: 380px;
 }
-
-.info-text{
-    margin-right: 110px;
+.info-img{
+    width: 400px;
+    height: 600px;
+    object-fit:cover ;
 }
+
 /* SITE-PROMO  */
 
-
-.site-promo{
+.site-promo-wrapper{
     padding-top: 240px;
     padding-bottom: 240px;
-    padding-left: 635px;
-    padding-right: 126px;
+ 
     background-image: url(../img/site-promo-bg.jpg);
+    background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-
+}
+.site-promo{  
+margin-left: auto;
 }
 .promo-heading{
     margin-top: 0;
@@ -334,18 +342,8 @@ only screen and (                min-resolution: 2dppx) {
     background-image: url(../img/intro-bg@2x.png);
 }
 }
-/* RETINA-BG-WATCH-IN-HAND */
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) { 
-.site-info-wrapper{
-    background-image: url(../img/watch-in-hand@2x.jpg);
-}
-}
+
+
 /* RETINA-BG-PROMO  */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -354,5 +352,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
-
+.site-promo-wrapper{
+    background-image: url(../img/site-promo-bg@2x.jpeg);
+}
 }
